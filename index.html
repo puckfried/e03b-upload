@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Copied from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>JS Header</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <ul class="mainlist">
+            <li>About us</li>
+            <!-- when li clicked the JS funtion should start -->
+            <li onclick="showTopics(event)">Topics MAT
+                <ul class="sublist">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>a bit of JS</li>
+                </ul>
+
+            </li>
+            <li onclick="showTopics(event)">Topics Year course
+                <ul class="sublist hide">
+                    <li>HTML/CSS</li>
+                    <li>JS</li>
+                    <li>React</li>
+                    <li>Backend</li>
+                </ul>
+
+            </li>
+            <li>Contact</li>
+         
+        </ul>
+    </header>
+    <main></main>
+    <footer> 
+        <img src="./images/instagram.png" alt="Instagram">
+        <img src="./images/youtube.png" alt="Youtube">
+        <img src="./images/discord.png" alt="Discord">
+        <img src="./images/facebook.png" alt="Facebook">
+        <img src="./images/linkedin.png" alt="LinkedIn">
+    </footer>
+<!-- connect my JS file here -->
+<script src="./script.js"></script>
+</body>
+</html>

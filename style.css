@@ -1,0 +1,59 @@
+body {
+    font-family: "Playpen Sans", cursive;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid blue;
+    padding: 0 30px;
+    height: 80px;
+}
+
+header h1 {
+    font-family: "Anta", sans-serif;
+
+}
+
+
+.mainlist {
+    display: flex;
+    gap: 30px;
+    
+    list-style: none;
+    /* you have to use a postion porpertie so the sublist is not taking any space, when it appears and moves other elements, here relative because the sublist should not move freely on the whole page, just under the mainlist */
+    position: relative;
+}
+
+.sublist {
+    background-color: whitesmoke;
+    padding: 10px;
+    list-style: none;
+    /* take the sublist out of the page flow and let it overlap, the other elements */
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+
+main {
+    /* you can also calculate in css, here it is used for getting a optimal minumum height for the main, so the footer appears at the bottom of the screen:  the height of the users monitor(100vh) - 80px (height of header) - 80px (height of footer). As described, you have a page were the footer is at the bottom without having content in the main, you do not have to use this... */
+    min-height: calc(100vh - 80px - 80px);
+    
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+    margin-left: 30px;
+}
+
